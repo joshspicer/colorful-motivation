@@ -34,11 +34,11 @@ function save_options() {
 function restore_options() {
   // Use default values.
   chrome.storage.sync.get({
-    month: "jan",
+    month: "Jan",
     day: 1,
-    year:1990,
-    hour: 6,
-    minute: 30
+    year:1980,
+    hour: 12,
+    minute: 00
   }, function(items) {
     document.getElementById('m').value = items.month;
     document.getElementById('d').value = items.day;

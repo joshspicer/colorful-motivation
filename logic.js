@@ -2,8 +2,13 @@
 // http://joshspicer.com/
 
 //Read it using the storage API
+//Default value stored here.
 var arr;
-chrome.storage.sync.get(['month', 'day','year','hour','minute'], function(items) {
+chrome.storage.sync.get( {month: "Jan",
+  day: 1,
+  year:1980,
+  hour: 12,
+  minute: 00}, function(items) {
 console.log('Information retrieved', items);
 arr = items;
 });
@@ -24,7 +29,7 @@ function displayBirthday() {
   return arr['month'] + " " + arr['day'] + ", " +
          arr['year'] + " at " + arr['hour'] + ":" + arr['minute'];
   } else {
-  return "January 1, 2000";
+  return "...";
   }
 
 }
@@ -55,7 +60,7 @@ window.setInterval(function(){
 window.setInterval(function(){
   // Sets background color based on my age!
   document.body.style.background = "#" + secondHalf().substring(1,7);
-}, 100);
+}, 10);
 
 window.setInterval(function(){
   document.getElementById("birthday").innerHTML = displayBirthday();
