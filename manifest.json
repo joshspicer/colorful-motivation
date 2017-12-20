@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Colorful Motivation",
+  "version": "0.1",
+  "author": "Josh Spicer",
+  "homepage_url": "http://joshspicer.com/",
+ "description": "a new tab page that displays the user's age (colorfully).",
+  "chrome_url_overrides" : {
+   "newtab": "index.html"
+ },
+ "permissions": [
+         "storage"
+       ],
+  "options_page": "options.html"
+}
