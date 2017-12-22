@@ -4,7 +4,8 @@ Replaces the (boring and white) new tab page on Chrome with (fun and colorful) m
 
 Based off of idea put forth in Chrome extension "Motivation" by maccman.  
 
-Find it in the Chrome Web Store!
+Find it in the Chrome Web Store here:<br>
+https://chrome.google.com/webstore/detail/colorful-motivation-new-t/mebfadffaiadgfhoieipinanpcmklhil
 
 ![photo1](time1.png "photo 1")
 ![photo2](time2.png "photo 2")
