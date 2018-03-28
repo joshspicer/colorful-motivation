@@ -26,10 +26,14 @@ function calculateAge() {
 
 function displayBirthday() {
   if (arr) {
-  return arr['month'] + " " + arr['day'] + ", " +
-         arr['year'] + " at " + arr['hour'] + ":" + arr['minute'];
+    var paddedMinute = arr['minute'];
+      if (paddedMinute < 10) {
+        paddedMinute = ("0" + paddedMinute);
+        console.log(paddedMinute);
+      }
+      return arr['month'] + " " + arr['day'] + ", " + arr['year'] + " at " + arr['hour'] + ":" + paddedMinute;
   } else {
-  return "...";
+      return "...";
   }
 
 }
